@@ -1,20 +1,24 @@
-body{
-    height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1405&q=80");
-    background-size: 125%;
-}
 /*所有元素 */
 *{
     /* 邊框 */
     border:0.5 px solid rgba(255,0,0,0.3);
     font-family: 微軟正黑體;
-    /* c#fff */
+    /* c#fff 字體顏色*/
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1405&q=80");
+    background-size: cover;
 }
 /* 盒子區塊 */
 #box{
     /* background-color:rgba(255,0,0,0.3); */
     height: 500px;
+    width: 900px;
+    margin: 20px auto 0 auto;
 }
 /* 導覽列區塊 */
 #logo{
@@ -22,9 +26,70 @@ body{
     font-size: 2em;
 }
 nav a{
+    /* 邊框底部 */
     border-bottom: 1.5px solid #fff;
-    padding:10 px 0;
+    padding:10px 10px;
 }
 a{
+    /* 文字裝飾 */
     text-decoration: none;
+}
+/* 指nav裡面的div */
+nav div{
+    /* 浮動:靠右 flr */
+    float: right;    
+}
+nav div a{
+    margin-left: 40px;
+}
+/* hover滑入 */
+nav a:hover{
+    background-color: rgba(248, 185, 113, 0.589);
+}
+/* 內容區塊 */
+#content{
+    width: 50%;
+    margin-top: 100px;
+}
+#content a{
+    border: 0.5px solid #fff;
+    padding:10px 15px;
+    background-color: rgba(248, 185, 113, 0.589);
+}
+#content a:hover{
+    background-color: rgba(248, 185, 113, 0);
+}
+
+/* 按鈕區塊 */
+#button{
+    text-align: center;
+    margin-top: 50px;
+}
+#button a{
+    border: 0.5px solid #fff;
+    padding:50px 50px;
+    background-color: rgba(248, 185, 113, 0.589);
+    height: 100px;
+    width: 100px;
+    /* bdra50p */
+    border-radius: 50%;
+    display:inline-block;
+}
+#button a.button-mr{
+    margin-right: 100px;
+}
+#button a:hover{
+    background-color: rgba(248, 185, 113, 0);
+}
+footer{
+    background-color: rgba(248, 185, 113, 0.589);
+    /* 定位:固定 */
+    position: fixed;
+    /* 底部距離:0 */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /* 行高與高度相同:垂直置中，僅限一行內容 */
+    line-height: 60px;
 }
