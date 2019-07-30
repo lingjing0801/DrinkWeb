@@ -11,7 +11,20 @@ body{
     /* c#fff */
     color: #ffffff;
 }
+/* 盒子區塊 */
 #box{
     /* background-color:rgba(255,0,0,0.3); */
     height: 500px;
+}
+/* 導覽列區塊 */
+#logo{
+    /* fz2e 文字2倍大 */
+    font-size: 2em;
+}
+nav a{
+    border-bottom: 1.5px solid #fff;
+    padding:10 px 0;
+}
+a{
+    text-decoration: none;
 }
