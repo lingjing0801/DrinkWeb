@@ -29,6 +29,7 @@ nav a{
     /* 邊框底部 */
     border-bottom: 1.5px solid #fff;
     padding:10px 10px;
+    text-shadow:5px 5px 7px rgba(0, 0, 0, 0.5);
 }
 a{
     /* 文字裝飾 */
@@ -94,4 +95,22 @@ footer{
     text-align: center;
     /* 行高與高度相同:垂直置中，僅限一行內容 */
     line-height: 60px;
+}
+/* 關於我區塊 */
+#about{
+    width: 700px;
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1552841847-0e031d33a283?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);
+    background-size: cover;
+    /* tac 水平置中 */
+    text-align: center;
+    /* 一行文字 行高和高度一樣就可以垂直置中 */
+    line-height: 600px;
+    margin:100px auto 0 auto;
+    border: 30px solid #fff;
+    /* bxsd陰影 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
+    text-shadow:5px 5px 7px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
